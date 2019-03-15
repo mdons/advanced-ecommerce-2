@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 export default function ProductDetail(props) {
   return (
     <div className="grid_1_of_5 images_1_of_5">
-      <img src={props.product.src} />
+      <img src={props.product.src} alt="" />
       <h3>Lorem Ipsum is simply </h3>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, in

@@ -1,29 +1,49 @@
 import React from "react";
+import PropTypes from "prop-types";
 
-export default function TopNav() {
+export default function TopNav(props) {
+  const onChange = (event, category) => {
+    event.preventDefault();
+    props.changeCategory(category);
+  };
+
   return (
     <div className="top-nav">
       <ul>
         <li>
-          <a href="carlights.html">car lights</a>
+          <a href="#" onClick={e => onChange(e, "lights")}>
+            car lights
+          </a>
         </li>
         <li>
-          <a href="carwheels.html">Car wheels</a>
+          <a href="#" onClick={e => onChange(e, "wheels")}>
+            Car wheels
+          </a>
         </li>
         <li>
-          <a href="carbumpers.html">car bumpers</a>
+          <a href="#" onClick={e => onChange(e, "cBumpers")}>
+            car bumpers
+          </a>
         </li>
         <li>
-          <a href="caradsystem.html">car audiosystem</a>
+          <a href="#" onClick={e => onChange(e, "audiosystems")}>
+            car audiosystem
+          </a>
         </li>
         <li>
-          <a href="truckbumpers.html">Truck bumpers</a>
+          <a href="#" onClick={e => onChange(e, "tBumpers")}>
+            Truck bumpers
+          </a>
         </li>
         <li>
-          <a href="contact.html">Feedback</a>
+          <a href="#">Feedback</a>
         </li>
         <div className="clear"> </div>
       </ul>
     </div>
   );
 }
+
+TopNav.propTypes = {
+  changeCategory: PropTypes.func.isRequired
+};

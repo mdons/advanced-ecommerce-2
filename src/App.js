@@ -6,6 +6,7 @@ import ImageSlider from "./components/ImageSlider";
 import ProductDetail from "./components/ProductDetail";
 import SubHeader from "./components/SubHeader";
 import TopNav from "./components/TopNav";
+import PropTypes from "prop-types";
 
 function App(props) {
   return (
@@ -16,7 +17,7 @@ function App(props) {
           <div className="clear"> </div>
           <SubHeader />
           <div className="clear"> </div>
-          <TopNav />
+          <TopNav changeCategory={props.changeCategory} />
         </div>
 
         <ImageSlider />
@@ -110,5 +111,11 @@ function App(props) {
     </div>
   );
 }
+
+App.propTypes = {
+  changeCategory: PropTypes.func.isRequired,
+  currentCategory: PropTypes.string.isRequired,
+  state: PropTypes.object.isRequired
+};
 
 export default App;

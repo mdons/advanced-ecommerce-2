@@ -5,7 +5,7 @@ export default function SubHeader() {
     <div className="sub-header">
       <div className="logo">
         <a href="index.html">
-          <img src="images/logo.png" title="logo" />
+          <img src="images/logo.png" alt="logo" />
         </a>
       </div>
       <div className="sub-header-right">
@@ -18,7 +18,7 @@ export default function SubHeader() {
           </li>
           <li>
             <a href="#">
-              CART: (EMPTY) <img src="images/cart.png" title="cart" />
+              CART: (EMPTY) <img src="images/cart.png" alt="cart" />
             </a>
           </li>
         </ul>

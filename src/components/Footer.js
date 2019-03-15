@@ -69,22 +69,22 @@ export default function Footer() {
           <ul>
             <li>
               <a href="#">
-                <img src="images/facebook.png" title="facebook" />
+                <img src="images/facebook.png" alt="facebook" />
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="images/twitter.png" title="Twiiter" />
+                <img src="images/twitter.png" alt="Twiiter" />
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="images/rss.png" title="Rss" />
+                <img src="images/rss.png" alt="Rss" />
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="images/gpluse.png" title="Google+" />
+                <img src="images/gpluse.png" alt="Google+" />
               </a>
             </li>
           </ul>
