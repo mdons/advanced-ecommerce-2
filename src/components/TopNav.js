@@ -11,34 +11,34 @@ export default function TopNav(props) {
     <div className="top-nav">
       <ul>
         <li>
-          <a href="#" onClick={e => onChange(e, "lights")}>
-            car lights
+          <a href="#" onClick={e => onChange(e, "tires")}>
+            car tires
           </a>
         </li>
         <li>
-          <a href="#" onClick={e => onChange(e, "wheels")}>
-            Car wheels
+          <a href="#" onClick={e => onChange(e, "headlights")}>
+            car headlights
           </a>
         </li>
         <li>
-          <a href="#" onClick={e => onChange(e, "cBumpers")}>
+          <a href="#" onClick={e => onChange(e, "bumpers")}>
             car bumpers
           </a>
         </li>
         <li>
-          <a href="#" onClick={e => onChange(e, "audiosystems")}>
-            car audiosystem
+          <a href="#" onClick={e => onChange(e, "audio")}>
+            car audiosystems
           </a>
         </li>
         <li>
-          <a href="#" onClick={e => onChange(e, "tBumpers")}>
-            Truck bumpers
+          <a href="#" onClick={e => onChange(e, "engine")}>
+            car engines
           </a>
         </li>
         <li>
           <a href="#">Feedback</a>
         </li>
-        <div className="clear"> </div>
+        <div className="clear" />
       </ul>
     </div>
   );
